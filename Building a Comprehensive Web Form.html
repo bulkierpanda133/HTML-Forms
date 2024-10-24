@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comprehensive Web Form</title>
+</head>
+<body>
+
+    <h1>Comprehensive Web Form with Accessibility</h1>
+    <form>
+
+        <!-- Select Menu: Favorite Programming Language -->
+        <label for="language">Choose your favorite programming language:</label>
+        <select id="language" name="language" aria-label="Favorite programming language">
+            <option value="javascript">JavaScript</option>
+            <option value="python">Python</option>
+            <option value="java">Java</option>
+            <option value="csharp">C#</option>
+            <option value="ruby">Ruby</option>
+        </select>
+        <br><br>
+
+        <!-- Radio Buttons: Level of Expertise -->
+        <fieldset aria-labelledby="expertiseLevel">
+            <legend id="expertiseLevel">Select your level of expertise:</legend>
+            <label for="beginner">
+                <input type="radio" id="beginner" name="expertise" value="beginner" aria-checked="false">
+                Beginner
+            </label>
+            <br>
+            <label for="intermediate">
+                <input type="radio" id="intermediate" name="expertise" value="intermediate" aria-checked="false">
+                Intermediate
+            </label>
+            <br>
+            <label for="advanced">
+                <input type="radio" id="advanced" name="expertise" value="advanced" aria-checked="false">
+                Advanced
+            </label>
+        </fieldset>
+        <br>
+
+        <!-- Checkboxes: Preferred Development Platforms -->
+        <fieldset aria-labelledby="platformPreference">
+            <legend id="platformPreference">Select your preferred development platforms:</legend>
+            <label for="web">
+                <input type="checkbox" id="web" name="platform" value="web" aria-checked="false">
+                Web
+            </label>
+            <br>
+            <label for="mobile">
+                <input type="checkbox" id="mobile" name="platform" value="mobile" aria-checked="false">
+                Mobile
+            </label>
+            <br>
+            <label for="desktop">
+                <input type="checkbox" id="desktop" name="platform" value="desktop" aria-checked="false">
+                Desktop
+            </label>
+        </fieldset>
+        <br>
+
+        <!-- Submit Button -->
+        <button type="submit">Submit</button>
+
+    </form>
+
+</body>
+</html>

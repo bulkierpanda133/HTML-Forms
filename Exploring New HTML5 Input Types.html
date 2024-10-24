@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML5 Input Types Demo</title>
+</head>
+<body>
+
+    <h1>HTML5 Input Types Form</h1>
+    <form>
+
+        <!-- Task 1: Email Input -->
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+        <br><br>
+
+        <!-- Task 2: Number Input -->
+        <label for="quantity">Enter Quantity:</label>
+        <input type="number" id="quantity" name="quantity" placeholder="Enter quantity" min="1" max="100" step="1" required>
+        <br><br>
+
+        <!-- Task 3: Date Input -->
+        <label for="date">Select a Date:</label>
+        <input type="date" id="date" name="date" min="2024-01-01" max="2024-12-31" required>
+        <br><br>
+
+        <!-- Task 4: Range Input -->
+        <label for="rating">Rate your experience (1-10):</label>
+        <input type="range" id="rating" name="rating" min="1" max="10" step="1" oninput="document.getElementById('ratingValue').innerText = this.value;">
+        <span id="ratingValue">5</span>
+        <br><br>
+
+        <!-- Task 5 (BONUS): Color Input -->
+        <label for="favcolor">Choose your favorite color:</label>
+        <input type="color" id="favcolor" name="favcolor" value="#ff0000">
+        <br><br>
+
+        <!-- Submit Button -->
+        <button type="submit">Submit</button>
+
+    </form>
+
+</body>
+</html>
